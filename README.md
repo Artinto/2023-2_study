@@ -4,7 +4,10 @@
 
 - 매주 2명씩 발표
   - 순서 추후에 개시 
-- 작성한 README.md 혹은 간단한 PPT를 활용하여 발표 [예시](https://github.com/Artinto/2023-2_study/tree/main/AlexNet)
+- 작성한 README.md 혹은 간단한 PPT를 활용하여 발표
+  - [예시](https://github.com/Artinto/2023-2_study/tree/main/AlexNet)
+- 스터디원은 매주 본인이 발표할 논문을 최소 __스터디 5일전__ 카톡에 공유
+- 발표가 아닌 스터디원들도 공유받은 논문을 __꼭 읽어오고__ Q&A 시간을 통해 질문
 
 <BR>
 
