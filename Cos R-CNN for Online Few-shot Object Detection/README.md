@@ -155,6 +155,7 @@ $$
 * 훈련 schedule이 끝날 때 모델을 사용하여 RepMet에서 사용한 것과 동일한 500개의 에피소드를 사용하여 새로운 하위 집합을 평가하고, 정확한 에피소드가 제공되지 않으므로 기본 하위 집합에 대해 자체 에피소드를 샘플링
 
 <a href='https://ifh.cc/v-nraPSz' target='_blank'><img src='https://ifh.cc/g/nraPSz.png' border='0'></a>
+#### TABLE 1
 
 > AP50 scores on 5-way ImageNet LOC test propsed in repMet
 
@@ -184,6 +185,7 @@ $$
 * 모델의 architecture의 차이를 더 잘 제정하기 위해 FewShot-YOLOv2, Meta R-CNN, RepMet을 훈련했지만 온라인 환경에서의 적합성을 평가하기 위해 few-shot exemplars에 대한 미세 조정은 하지 않음
 
 <a href='https://ifh.cc/v-nokF8M' target='_blank'><img src='https://ifh.cc/g/nokF8M.png' border='0'></a>
+#### TABLE 2
 
 > AP50 scores on 20-way VOC test proposed by FewShot-YOLOv2
 
@@ -219,10 +221,12 @@ $$
 ### 2) Loss Obfective :
 
 <a href='https://ifh.cc/v-PN3X1G' target='_blank'><img src='https://ifh.cc/g/PN3X1G.png' border='0'></a>
+#### TABLE 3
 
   > Ablations on the cosine box head reported as AP5
 
 <a href='https://ifh.cc/v-pMCV41' target='_blank'><img src='https://ifh.cc/g/pMCV41.png' border='0'></a>
+#### TABLE 4
 
   > Cos RPN embedder ablations reported as AP50
 
@@ -233,7 +237,7 @@ $$
 
 ### 3) Cos RPN :
 
-* 'Cos RPN embedder ablations reported'의 표에서 전반적인 추세로 볼 때, Cos RPN은 표준 RPN에 비해 few-shot detection하는데 최적이지 않은 것으로 보임
+* TABLE 4의 표에서 전반적인 추세로 볼 때, Cos RPN은 표준 RPN에 비해 few-shot detection하는데 최적이지 않은 것으로 보임
 
 * 한 가지 가능한 설명은 물체의 모양이 너무 다양해서 단일 중심을 중심으로 안정적으로 클러스터링할 수 없기 때문에 코사인 유사성 공식이 가능한 모든 변화 모드를 포착하지 못하기 때문일 수 있음
 
@@ -245,7 +249,10 @@ $$
 
 ### 4) Su-MoCo
 
-* '(A) Across hyperparameters'표에 표시된 것처럼 Su-MoCo의 모멘텀 및 대기열 크기 하이퍼파라미터를 제거
+<a href='https://ifh.cc/v-nw5xRC' target='_blank'><img src='https://ifh.cc/g/nw5xRC.png' border='0'></a>
+#### TABLE 5
+
+* TABLE 5(a)표에 표시된 것처럼 Su-MoCo의 모멘텀 및 대기열 크기 하이퍼파라미터를 제거
 * 대기열 크기가 커질수록 새로운 클래스에 대한 성능이 향상되는 것을 발견했으며, 이는 모델이 학습 반복 중에 더 많은 예시를 고려할 수 있으면 더 나은 특징 표현을 학습한다는 직관적인 사실을 확인시켜 줌
 * 대기열 크기가 증가함에 따라 대기열의 오래된 예시가 여전히 정보를 제공하도록 하기 위해 예시와 경로 가중치가 더 느리게 진화해야 하므로 모멘텀도 증가해야 함
 * Su-MoCo를 사용하지 않았을 때와 비교하여 새로운 클래스에서 전반적으로 2~4%의 성능 향상을 달성하여 Su-MoCo 도입의 효과를 보여줌
