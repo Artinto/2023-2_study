@@ -37,7 +37,6 @@ Review. KMJ, 2023.08.04
 
     > 순전파를 통해 생성모델에서 모방 데이터 샘플링
     
-## Related work
 
 ## Adversarial nets
 
