@@ -50,6 +50,9 @@ Review. KMJ, 2023.08.04
 
 ### 가치함수
 * V는 학습 목표를 나타내는 가치함수
+
+![image](https://github.com/Artinto/2023-2_study/assets/108729047/120a8fa3-6ac1-44fa-920f-5b3670435ed9)  
+
 <img width="920" alt="obfunct_of_d" src="https://github.com/Artinto/2023-2_study/assets/108729047/d22d416e-4bb2-47bb-86e9-1af95afe263a">
 
 * G(Generator)를 minimize하고 D(Discriminator)를 maximize한다고 생각하면 된다.
