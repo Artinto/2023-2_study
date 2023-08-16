@@ -1,7 +1,6 @@
 # Faster R-CNN: Towards Treal-Time Object Detection with Region Proposal Networks
 
 ## Abstract
-
 * 당시 2015년, SPPnet과 Fast R-CNN과 같은 Object detection은 detection의 시간은 감소했지만 Region Proposal단계에서 시간 소요를 보안 하기 위해 Faster R-CNN이 제안
 * Faster R-CNN은 기존 Fast R-CNN의 물체의 위치를 알아내는 Region Rroposal을 별도의 Region Rroposal Networks(RPN)를 추가하여 GPU를 사용하여 시간 단축
 * Detection Network와 RPN은 같은 convolutional features를 공유하기에 region proposal cost는 없음
