@@ -14,17 +14,31 @@
 * 본 논문에서는 알고리즘 측면에서 변화를 이용하여 region proposal computation을 cost-free하도록 Network를 구성
 * Detection network와 feature map들을 공유하여 성능도 좋아지고 시간적인 측면에서도 이점을 보임
 * Feature map 자체가 앞쪽에서 sharing 된다면 별도의 RPN을 구축하는데 있어서 추가적인 몇개의 convolution layer만 있어도 가능하기에 cost-free
+* 본 논문에서는 Faster R-CNN에서 기존의 region proposal을 위한 selective search에서 시간을 사실상 없는 것으로 하여 시간적 측면에서 이점이 있음
+* MS COCO, PASCAL VOC와 같은 데이터셋에서 우수한 성능을 보임
+* 비용적 측면과 정확도가 우수하여 당시 대회에서 나오자마자 많이 활용
 
 ## 2 Related Work
-* 
+* Object Proposal Method 중 대표적인 것은 Selective Search, Sliding Window가 있음
+  * Selective Search
+    * object 인식이나 검출을 위한 가능한 후보 영역을 알아낼 수 있는 방법을 제공하는 것을 목표(기존 Fast R-CNN은 CPU기반)
+  * Sliding Window
+    * 일정 크기의 Window를 이미지 위에서 조금씩 옮기면서 '전수조사'하는 것(한 이미지에 대해 윈도우를 sliding하는 것으로 비효율적)
+* Deep Networks for Object Detection
+  * 초창기 R-CNN은 물체가 어디 있는지는 GPU를 사용하지 않음, CPU를 이용한 Selective Search 사용(Region Proposal에 대해 bounding이 심함)
+  * 그래서 Deep Networks를 이용하여 bounding box를 찾아내는 방법들이 제안되었음(Ex. OverFeat, MultiBox)
 
-## 3 Region Proposal Networks
+## 3 Faster R-CNN
 
 
-## 4 Experiments
+
+## 4 Region Proposal Networks
 
 
-## 5 Conclusion
+## 5 Experiments
+
+
+## 6 Conclusion
 
 
 
