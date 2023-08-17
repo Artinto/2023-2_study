@@ -57,27 +57,41 @@
     
   #### A Loss Function for Learning Region Proposals
   
-* 각 anchor에 대해 binary class label을 진행하는데 있어 positive label을 찾아내는데 두가지 방식의 ankhor가 존재
-  * Intersection-over-Union(IoU)
-      ![IoU](https://blog.kakaocdn.net/dn/I9MIb/btq9eMfNYbF/KeQxOsQydbNkZuRNhoMv9k/img.png "IoU")
-    * 위 그림처럼 box들이 얼마나 겹쳐 있는지에 따라 positive label(>=0.7/유), neagtive label(<=0.3/무)을 구분
+* Intersection-over-Union(IoU)
 
+ ![IoU](https://blog.kakaocdn.net/dn/I9MIb/btq9eMfNYbF/KeQxOsQydbNkZuRNhoMv9k/img.png "IoU")
+  * IoU가 가장 높은 것은 positive label로 취급
+  * 또는 IoU값이 각각 positive label(>=0.7/유), neagtive label(<=0.3/무)로 취급
 
+* Loss Function
+  * IoU를 통해 positive도 negative도 아닌 것은 object function에 영향을 미치지 않기에 아래와 같은 loss function을 이용
+<a href='https://ifh.cc/v-wnSyKq' target='_blank'><img src='https://ifh.cc/g/wnSyKq.png' border='0'></a>
 
+  * cls에서 pi*의 경우 ground-trurh(정답 lable)은 ankhor에 따라 1 or 0의 값을 가지고 reg은 현재 위치에 object가 존재할때만 정확한 위치를 찾아내는 네트워크이기에 cls에서 1일 경우만 진행, 0일 경우 생략(ti*는 물체의 가로,세로,너비,높이를 가지고 있는 튜플)
+  * sigma앞에 있는 것은 weight함수로 각 loss에 대한 가중치로 ankhor개수로 정해짐(크게 영향을 미치진 않음)
+<a href='https://ifh.cc/v-Dv9cD1' target='_blank'><img src='https://ifh.cc/g/Dv9cD1.png' border='0'></a>
+  * bounding box regression을 위한 파라미터 공식들은 위와 같이 기본 R-CNN의 parameterization을 이용(x,y는 box의 center)
 
+  #### Sharing Convolutional Features for Region Proposal and Object Detection
 
-  
-
-
-
-
-
-
-
-
-
+  1. 위 설명처럼 RPN을 훈련 후 end-to-end로 fine-tuning
+  2. detection network를 ImageNet에 의해 초기화 후 Fast R-CNN으로 훈련, 이때 RPN과 detection network는 conv layer를 공유하지 앟음
+  3. 네트워크 간 conv layer를 공유하기 위해 수정한 뒤 RPN의 하이퍼파라미터를 fine-tuning 후 두 네트워크에 합성곱 layer를 공유
+  4. 공유 conv layer를 고정하여 Fast R-CNN의 fc layer를 fine-tuning
 
 ## 5 Experiments
+
+* 
+
+
+
+
+
+
+
+
+
+
 
 
 ## 6 Conclusion
