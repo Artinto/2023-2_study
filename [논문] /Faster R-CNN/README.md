@@ -42,20 +42,20 @@
 * RPN을 진행하는데 있어 n x n 크기의 window를 feature map에 sliding하여 진행(이때 feature는 각각 reg, cls용으로 두개로 진행)
 ### Faster R-CNN RPN의 특성
 
-  #### Anchor
+#### Anchor
   
 * 이러한 sliding-window location에 대하여 다양한 Region Proposal을 예측하는데 본문에서는 Anchor라고 표현
 * 위치마다 k개의 box를 이용(다양한 size)
 * cls layer의 경우 object의 유무를 판단하기 위해 softmax형태의 2k score가 나타남
 * reg layer의 경우 object의 위치를 판단하기 위해 가로,세로,높이,너비에 대해 4k로 예측(본 논문에서는 기본적으로 3 scale, 3 aspect ratios를 이용하기에 총 k=9의 ankhor를 사용)
 * Feature map의 size가 W x H라고 한다면 ankhor의 갯수는 WHk개가 됨
-    
-  #### Translation-Invariant Anchors
+
+#### Translation-Invariant Anchors
   
 * 이미지에서 이동이 가해진다 하더라도 Translation-Invariant가 보장
 * Multibox와 같이 Translation-Invariant가 보장되지 않는다면 Overfitting의 위험도가 큼
     
-  #### A Loss Function for Learning Region Proposals
+#### A Loss Function for Learning Region Proposals
   
 * Intersection-over-Union(IoU)
 
@@ -81,20 +81,36 @@
 
 ## 5 Experiments
 
-* 
+### PASCAL VOC 2007 test set(+Ablation Experiments)
 
+<a href='https://ifh.cc/v-Brqs66' target='_blank'><img src='https://ifh.cc/g/Brqs66.png' border='0'></a>
+> 이 논문에서 제안한 Fast R-CNN에 RPN을 추가하여 서로 conv layer를 sharing할 때 성능이 좋음
+> conv layer를 sharing할때 성능이 더 좋음
+> ZF보다 VGG를 사용했을 때 더 성능
 
+### Perfomance of VGG-16
 
+<a href='https://ifh.cc/v-CHB7GP' target='_blank'><img src='https://ifh.cc/g/CHB7GP.png' border='0'></a>
+> 같은 data set을 이용할 때 확실히 selective search보다 RPN+VGG를 이용한 것이 성능이 우수하며 시간도 단축 됨
 
+### Timing
 
+<a href='https://ifh.cc/v-FjLGop' target='_blank'><img src='https://ifh.cc/g/FjLGop.png' border='0'></a>
+> ss와 RPN을 비교하였을 때 proposal의 수가 감소하여 속도가 증가함
+> ZF보다 VGG가 더 deep network이기에 VGG 속도가 비교적 느림
 
+### Analysis of Recall-to-IoU
 
+<a href='https://ifh.cc/v-4j21rn' target='_blank'><img src='https://ifh.cc/g/4j21rn.png' border='0'></a>
+> IoU측면에서 RPN을 사용했을 때 다른 method에 비해 성능이 우수함을 알 수 있음
 
+### One-Stage Detection vs Two-stage Detection(Proposal + Detection)
 
-
-
+<a href='https://ifh.cc/v-S5q0qn' target='_blank'><img src='https://ifh.cc/g/S5q0qn.png' border='0'></a>
 
 ## 6 Conclusion
+
+* conv layer를 RPN과 detection network에 공유함으로써 cost-free상태로 객체 감지 정확도를 향상시키고 시간을 단축하는데 있어 우수함
 
 
 
