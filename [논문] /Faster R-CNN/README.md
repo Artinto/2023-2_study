@@ -72,7 +72,7 @@
 <a href='https://ifh.cc/v-Dv9cD1' target='_blank'><img src='https://ifh.cc/g/Dv9cD1.png' border='0'></a>
   * bounding box regression을 위한 파라미터 공식들은 위와 같이 기본 R-CNN의 parameterization을 이용(x,y는 box의 center)
 
-  #### Sharing Convolutional Features for Region Proposal and Object Detection
+#### Sharing Convolutional Features for Region Proposal and Object Detection
 
   1. 위 설명처럼 RPN을 훈련 후 end-to-end로 fine-tuning
   2. detection network를 ImageNet에 의해 초기화 후 Fast R-CNN으로 훈련, 이때 RPN과 detection network는 conv layer를 공유하지 앟음
