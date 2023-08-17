@@ -30,9 +30,37 @@
 
 ## 3 Faster R-CNN
 
+![Figure 1: Faster R-CNN is a single, unified network for object detection](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRWpKA%2FbtqQCApKJ3R%2FxU6cjtRW6RDksmje7X4RzK%2Fimg.png "Figure 1: Faster R-CNN is a single, unified network for object detection")
 
+* Image를 Conv layers를 통과하여 feature map이 형성되는데 이 feature map은 RPN과 RoI pooling에 공유되고 RPN의 결과를 다시 RoI pooling에 사용되어 classifier를 진행
+* 이처럼 Faster R-CNN은 두가지 모듈로 구성되어 있는데 기존 fast R-CNN의 Detector와 RPN으로 구성
 
 ## 4 Region Proposal Networks
+
+![Figure 2: Region Proposal Network(RPN)](https://ifh.cc/g/PfKnzG.jpg "Figure 2: Region Proposal Network(RPN)")
+
+* RPN은 input으로 한장의 이미지를 받아 bounding boxd의 형태로 output을 출력
+* 이때 사용되는 feature map은 Fast R-CNN과 공유하여 사용
+* RPN을 진행하는데 있어 n x n 크기의 window를 feature map에 sliding하여 진행(이때 feature는 각각 reg, cls용으로 두개로 진행)
+* Faster R-CNN의 특성
+  * Anchor
+    * 이러한 sliding-window location에 대하여 다양한 Region Proposal을 예측하는데 본문에서는 Anchor라고 표현
+    * 위치마다 k개의 box를 이용(다양한 size)
+    * cls layer의 경우 object의 유무를 판단하기 위해 softmax형태의 2k score가 나타남
+    * reg layer의 경우 object의 위치를 판단하기 위해 가로,세로,높이,너비에 대해 4k로 예측
+    * 본 논문에서는 기본적으로 3 scale, 3 aspect ratios를 이용하기에 총 k=9의 ankhor를 사용
+    * Feature map의 size가 W x H라고 한다면 ankhor의 갯수는 WHk개가 됨
+  * Translation-Invariant Anchors
+    * 이미지에서 이동이 가해진다 하더라도 
+  
+
+
+
+
+
+
+
+
 
 
 ## 5 Experiments
