@@ -1,3 +1,6 @@
+# 5번 시간 초과 -> 효율성 낮음
+
+
 # bridge_length 길이만큼 0으로 채워진 bridge라는 list 생성
 # truck_weights를 비울 때 까지 bridge에 값 추가
 # truck_weights가 비워지면 모든 트럭이 다리를 지났거나 건너는 중
