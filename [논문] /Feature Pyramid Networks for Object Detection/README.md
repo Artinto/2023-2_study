@@ -1,4 +1,4 @@
-# Faster R-CNN: Towards Treal-Time Object Detection with Region Proposal Networks(2015)
+# Feature Pyramid Networks for Object Detection
 
 ## Abstract
 * Feature pyramids는 한 사물을 detection할 때 서로 다른 scale을 이용하여 분석하는 기법
