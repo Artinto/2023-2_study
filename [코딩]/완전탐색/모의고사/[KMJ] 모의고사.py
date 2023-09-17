@@ -15,6 +15,6 @@ def solution(answers):
             correct[2] += 1
             
     for pers, count in enumerate(correct):
-        if correct == max(correct):
+        if count == max(correct):
             answer.append(pers+1)  
     return answer
