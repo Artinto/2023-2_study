@@ -16,13 +16,13 @@ SRCNN PROBLEM
    * Nearest-neighbor interpolation
      <img width="680" alt="image" src="https://github.com/Artinto/2023-2_study/assets/127365253/b7b24866-019e-4797-b726-a6b903666cf4">
      * Interpolation 방법 중에서 가장 간단한 방법
-     * 빈 픽셀은 가장 가까운 픽셀 값으로 채우는 방법
+     * 빈 픽셀은 가장 가까운 픽셀 값으로 채우는 방법  
     모델 내에 Upsampling을 하는 위치에 따라 다양한 Framework가 존재
     연구에 따라 Upsampling 방식을 다양하게 적용할 수 있음
     <img width="664" alt="image" src="https://github.com/Artinto/2023-2_study/assets/127365253/ae5e3ea4-7c41-4d7a-a57a-ea20081ce736">
 
 
-2. Image Super-Resoltion 문제에 대해 어떻게 딥러닝 모델을 적용할 것인가?
+2. Image Super-Resoltion 문제에 대해 어떻게 딥러닝 모델을 적용할 것인가?  
    -> 일반적인 분류, 회귀 모델에서 사용하는 모든 방법론이 적용 가능함
    
    <img width="691" alt="image" src="https://github.com/Artinto/2023-2_study/assets/127365253/5c204249-ef18-480f-b4f1-25cf7bbe88c8">
