@@ -8,6 +8,8 @@
 
 
 ## Introduction
+![Figure 1](https://github.com/Artinto/2023-2_study/assets/84369594/0c139066-49f8-40b4-9a63-1114c3a5023b)
+
 + Fewer Parameter
 
 + Information preserved
