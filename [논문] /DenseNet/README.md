@@ -8,6 +8,17 @@
 
 
 ## Introduction
++ Lenet5의 5-layer -> Highway Networks와 ResNets의 over 100-layer
++ input이 layer를 계속 통과할수록 정보들이 점차 "씻겨 나간다"
++ 이 문제를 해결하기 위해, layer들을 연결한 model들이 등장하기 시작했다(ResNets)
+  
++ ResNets이 이전 output Feature map과 input Feature map의 summation으로 결과를 가져오는 것이었다면
+  + $x_l = H_l(x_{l-1}) + x_{l-1}$
+
++ DenseNets은 이전 layer들로부터 생성된 모든 output Feature map들을 input layer와 Concatenation하는 방식
+  + $x_l = H_l([x_0,x_1,...,x_{l-1}])$
+
+
 ![Figure 1](https://github.com/Artinto/2023-2_study/assets/84369594/0c139066-49f8-40b4-9a63-1114c3a5023b)
 
 + Fewer Parameter
