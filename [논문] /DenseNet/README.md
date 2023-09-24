@@ -22,15 +22,29 @@
 ![Figure 1](https://github.com/Artinto/2023-2_study/assets/84369594/0c139066-49f8-40b4-9a63-1114c3a5023b)
 
 + Fewer Parameter
+  + 불필요한 feature map들을 재학습할 필요가 없기 때문에 더 적은 Parameter를 가짐
 
 + Information preserved
+  + DenseNet은 네트워크에 추가되는 정보와 보존되는 정보를 명확히 구분하여 정보를 보존함
 
 + Improve Flow of Information and Gradient
+  + training에 용이하도록 정보와 gradient의 flow를 개선시켰으며, Overfitting을 방지하는 Regularization 효과까지 얻을 수 있음
 
 ## Related work
 
+
 ## DenseNets
+![Figure 2](https://github.com/Artinto/2023-2_study/assets/84369594/ab4cff18-3b94-4d44-9a87-e75bbd607112)
+
+![Table 1](https://github.com/Artinto/2023-2_study/assets/84369594/0934b2c8-a80d-4a3a-8406-387a3d66ad25)
 
 ## Experiments
-
+![Tanle 2](https://github.com/Artinto/2023-2_study/assets/84369594/2880ad4e-f683-4ac2-9e73-4fd43ed7e4f6)
+![Figure 3](https://github.com/Artinto/2023-2_study/assets/84369594/3f35be58-5dbb-457d-b891-9ba91e023d53)
+![Figure 4)](https://github.com/Artinto/2023-2_study/assets/84369594/b753beba-75d5-4ea6-aa8d-42528399fbc7)
 ## Discussion
+![Figure 4](https://github.com/Artinto/2023-2_study/assets/84369594/0c7eb6b8-fb40-4a54-a65e-b50134d7a96b)
+
+![Figure 5](https://github.com/Artinto/2023-2_study/assets/84369594/61842b44-b2ce-4caa-b89c-1137376a302b)
+
+## Conclusion
