@@ -8,6 +8,7 @@
 - StyleGAN3
 
 ## Introduction
+- high-resolution(고해상도) 이미지를 생성하는 GAN
 - 이미지 생성에서 스타일과 특징의 독립적인 조절을 가능하게 하는 GAN
 - PGGAN 구조에서 Style transfer 개념을 적용하여 generator architetcture를 재구성 한 논문
 
