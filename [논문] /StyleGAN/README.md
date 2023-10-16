@@ -131,6 +131,12 @@
 - multi Latent z를 이용할 경우
   - latent vertor z1, z2, z3 등이 Mapping network f를 통해서 w1, w2, w3 등을 생성
   - 각 layer에 나눠서 적용
-  - 세밀한 부분들을 나누어서 학습 가능
+  - 세밀한 부분들을 나누어서 학습 가능  
 ![image](https://github.com/mjkim0819/NI2L_STUDY/assets/108729047/1e9e96bd-a523-4145-8454-22261177cb38)
 
+
+## 한계
+- 물방울 형태의 blob들이 관측이 됨
+- StyleGAN2에 언급된 내용  
+
+![image](https://github.com/Artinto/2023-2_study/assets/108729047/2f5384a7-a9bf-48cd-a3b7-df7802441241)
