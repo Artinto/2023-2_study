@@ -60,9 +60,9 @@ Review.LSJ, 2023.11.05
 
 ## **장단점**  
 * 장점
-  > Faster R-CNN과 비슷한 성능인데 크기가 큰 객체를 훨씬 잘 포착함
-  > customized된 layers를 따로 정해줄 필요없이 손쉽게 standard CNN과 transformer 구조를 사용
+  > Faster R-CNN과 비슷한 성능인데 크기가 큰 객체를 훨씬 잘 포착함  
+  > customized된 layers를 따로 정해줄 필요없이 손쉽게 standard CNN과 transformer 구조를 사용  
 * 단점
-  > 작은 object를 잘 탐지하지 못 함
+  > 작은 object를 잘 탐지하지 못 함  
   > Flop이 많아 학습시 많은 시간이 소요됨
 
