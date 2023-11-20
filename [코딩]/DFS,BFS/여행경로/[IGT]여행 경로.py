@@ -3,7 +3,6 @@ def solution(tickets):
     D = dd(list)
     for a,b in sorted(tickets):
         D[a].append(b)
-    print(D)
     return ["ICN"] + DFS("ICN",D,len(tickets))
 
 def DFS(leave,T,n):
@@ -16,5 +15,6 @@ def DFS(leave,T,n):
             T[leave].append(arrive)
         else:
             return 0
+            # 0을 return하는 조건 : n != 0 임에도 len(T[leave])가 0 이거나 T[leave] 안의 모든 경우의 수에 대해 temp == 0 인 경우(갈 수 있는 곳이 없음)
     else:
         return []
