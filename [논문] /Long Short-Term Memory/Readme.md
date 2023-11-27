@@ -38,7 +38,7 @@
 
 <img src="https://ifh.cc/g/ASYZK5.jpg" width="360" height="270"/>   <img src="https://ifh.cc/g/pjZkwV.jpg" width="360" height="270"/>
 
-3. Gate 구조의 도입 - 자동으로 input, output값에 대한 제어
+2. Gate 구조의 도입 - 자동으로 input, output값에 대한 제어
    * Input Gate
      * 현재의 input과 이전 step의 output을 가져와 연산을 통해 Cell State를 업데이트하며 이때의 비율은 sigmoid를 통해 자동 결정
      * $i_t = \sigma(W_i\cdot[h_{t-1}, X_t]+bias) $
@@ -61,7 +61,7 @@
 
 <img src="https://ifh.cc/g/7zZ7CX.jpg" width="360" height="270"/>   <img src="https://ifh.cc/g/5D8Gxp.jpg" width="360" height="270"/>
 
-4. Training Method 개선 - BPTT와 RTRL(Real-Time Recurrent Learning)의 Variation을 동시에 학습 사용
+3. Training Method 개선 - BPTT와 RTRL(Real-Time Recurrent Learning)의 Variation을 동시에 학습 사용
    * BPTT - Output units, Hidden units, Output gates
      * 속도가 빠르며 일반적으로 사용하지만 Backward연산이 다로 필요하며 Vanishing Gradient가 잘 나타남
    * RTRL - Input gates, Cell(CEC)
