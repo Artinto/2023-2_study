@@ -202,7 +202,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 
 ## 추가 조사
 
-### Residual Networks Behave Like Ensembles of Relatively Shallow Networks
+### [Residual Networks Behave Like Ensembles of Relatively Shallow Networks](https://arxiv.org/pdf/1605.06431.pdf)
 - Residual의 구조는 Ensemble(앙상블) 모델 처럼 작동한다.  
 
 ![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EC%95%99%EC%83%81%EB%B8%94.JPG?raw=true)
@@ -269,7 +269,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 <img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EC%9D%B8%EC%85%89%EC%85%98%20%EA%B2%B0%EA%B3%BC2.JPG?raw=true" width='400' hegith = '100'>
 
 * Xception이 Inception보다 조금 더 좋고, 파라미터수가 더 적은 것을 볼수 있지만, 속도는 조금 더 느리다.
-* 자세한 내용은 아래 참고(Deep Learning with Depthwise Separable Convolutions)
+* 자세한 내용은[Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/pdf/1610.02357.pdf)
 
 </br>
 
