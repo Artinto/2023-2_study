@@ -16,9 +16,9 @@
  </br>
     
 * `Gradient Vanishing/Exploding`로 인해서 깊게 쌓기만 하는것은 마냥 쉬운 일이 아니였음.
-    * Gradient Vanishing(기울기 소실) 문제는 Backpropagation(역전파) 과정에서 Input layer로 갈수록 Gradient(기울기)가 점차적으로 작아지는 현상.
+    * Gradient Vanishing(기울기 소실) 문제는 Backpropagation(역전파) 과정에서 **Input layer로 갈수록 Gradient(기울기)가 점차적으로 작아지는 현상**.
         * layer 수가 많을수록 즉 깊이가 깊어질수록 문제가 심해짐.
-    * Gradient Exploding(기울기 폭주) 문제는 소실과는 다르게 Backpropagation(역전파) 과정에서 큰 값을 가지는 weight(가중치)들이 반복적으로 곱해져 weight(가중치)가 제대로 업데이트 되지 않는 현상.
+    * Gradient Exploding(기울기 폭주) 문제는 소실과는 다르게 Backpropagation(역전파) 과정에서 **큰 값을 가지는 weight(가중치)들이 반복적으로 곱해져 weight(가중치)가 제대로 업데이트 되지 않는 현상**.
  
  </br>
     
@@ -59,8 +59,8 @@
     </br>
 
     * 효과
-        * Layer 수가 많은 깊은 망들도 최적화가 가능하다.(학습이 가능)
-        * Layer 수가 늘어나 정확도가 개선된다.
+        * **Layer 수가 많은 깊은 망들도 최적화가 가능하다.(학습이 가능)**
+        * **Layer 수가 늘어나 정확도가 개선된다.**
 
 ## Identity Mapping by shortcuts
 * ResNet은 깊은 신경망을 효과적으로 학습시키기 위한 아키텍처로, 그 중요한 부분 중 하나가 residual block이다.
@@ -131,7 +131,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 * **Plain net을 바탕**으로 설계된 Network이다. Plain net에서 **shortcut connection**이 추가되었다고 볼 수 있다.
 ![Alt text1](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdek2kD%2FbtqTfCx4XTn%2FkMHkA7Fv8vbW5Hkmg1x3a0%2Fimg.png
 )
-이 때 Identity Shorkcut은 input과 output을 **같은 차원**으로 맞춰줘야 한다. 차원을 맞추기 위해 **두 가지 방법**을 사용할 수 있다.
+이 때 Identity Shortcut은 input과 output을 **같은 차원**으로 맞춰줘야 한다. 차원을 맞추기 위해 **세 가지 방법**을 사용할 수 있다.
 
 1. **Padding**
     - 차원을 조절하기 위해 0을 넣어서 맞춰준다.(zero-padding) → 추가 파라미터 없음.
