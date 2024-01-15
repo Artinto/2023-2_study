@@ -429,7 +429,7 @@ model1 = model1.to(device)
 model1 = torch.nn.DataParallel(model1) # 데이터 병렬 처리
 cudnn.benchmark = True # backpropagation 학습시 가장 적합한 알고리즘을 선정해 수행.
 
-file_name = 'resnet18_mnist.pt'
+file_name = 'resnet18_cifar10.pt'
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.AdamW(model1.parameters())
