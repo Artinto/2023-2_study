@@ -211,7 +211,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 #### Lesion Study(손상 연구)
 * 학습된 ResNet에서 skip connection과  downsampling projection을 제외한 블록을 제거시키고 실험.  
 <img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EC%86%90%EC%8B%A4.JPG?raw=true" width='400' hegith = '200'>   
-<img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EC%B6%94%EA%B0%80%EA%B2%B0%EA%B3%BC1.JPG?raw=true" width='400' hegith = '200'>     
+<img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EC%B6%94%EA%B0%80%EA%B2%B0%EA%B3%BC1.JPG?raw=true" width='600' hegith = '400'>     
 
 - VGG과 Resnet을 비교하면, VGG는 layer의 손실이 Error에 크게 영향주지만, Resnet는 Downsampling layer를 제외하고는 크게 영향을 주지 않음.
 - 이는 VGG는 layer들간의 길이 unique하여 하나라도 지워지면 정보 손실이 심각해지지만, Resnet은 Unraveled의 관점에서 봤을 때 가능한 Path가 절반으로 감소하는 효과.
