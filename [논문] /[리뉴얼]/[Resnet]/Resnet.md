@@ -247,7 +247,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 - 결론
     - Resnet은 이전 모델들에 비해 깊지만, 단일한 깊은 네트위크가 아닌 많은 경로들의 집합으로 볼 수 있음.
     - Backpropagation 중에 gradient에 기여하는 네트워크의 경로는 생각보다 얕다.
-    - 즉, Vanishing gradient를 완전히 해결할 수 없다.
+    - 즉, **Vanishing gradient를 완전히 해결할 수 없다.**
 
 </br>
 
