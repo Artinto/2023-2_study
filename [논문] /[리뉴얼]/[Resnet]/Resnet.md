@@ -200,7 +200,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 - ![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B2%B0%EA%B3%BC5.JPG?raw=true)  
 
 
-## 의문점.
+## 추가 조사
 
 ### Residual Networks Behave Like Ensembles of Relatively Shallow Networks
 - Residual의 구조는 Ensemble(앙상블) 모델 처럼 작동한다.  
