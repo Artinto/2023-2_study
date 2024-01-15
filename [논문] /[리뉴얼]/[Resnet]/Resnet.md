@@ -257,10 +257,6 @@ $$ y = F(x, {W_i}) + W_sx $$
     - 채널 수 조절, 계산량 감소, 비선형성 추가.
 - 1x1의 convolution의 단점.
     - 강제로 채널을 줄여 정보 손실이 방생하여 정확도가 떨어진다.
-    <img src= "https://i.imgur.com/aXiDwaK.png" width='400' hegith = '200'>     
-    
-
-    [참고](https://velog.io/@lighthouse97/CNN의-Bottleneck에-대한-이해)
 
 * Inception vs xception
     * Xception은 Inception에 있는 1x1 conv 연산을 줄여 더 높은 정확도를 얻음.
