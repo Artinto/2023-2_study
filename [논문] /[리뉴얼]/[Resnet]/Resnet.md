@@ -5,7 +5,7 @@
     <img src= "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Io-I-fOM0jGftDb_nne4KQ.png" width='500' hegith = '400'>  
     [출처](https://medium.com/@Lidinwise/the-revolution-of-depth-facf174924f5)
     * layer의 수가 VGG의 8배 깊음.
-
+    * 정확도 3.57%
 </br>
 
 ## Intro.
