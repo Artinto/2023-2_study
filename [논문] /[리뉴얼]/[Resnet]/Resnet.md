@@ -228,7 +228,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 - 즉, Residual network은 Ensenble(앙상블)로 볼 수 있다.
 
 #### Path  
-<img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B8%B8%EC%9D%B4.JPG?raw=true" width='500' hegith = '200'>     
+<img src= "https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B8%B8%EC%9D%B4.JPG?raw=true" width='800' hegith = '400'>     
 - 95% 이상의 path가 19~35개의 모듈을 지남.
 - path의 길이가 질수록 input의 영향을 적게 받게됨.
 - 20개 보다 긴 경로들은 학습에 영향을 주기엔 너무 깊음.
