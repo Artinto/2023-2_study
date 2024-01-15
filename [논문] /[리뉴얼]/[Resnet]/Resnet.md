@@ -180,7 +180,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 ## CIFAR-10의 데이터의 결과
 - ILRSVRC 대회와는 다르게 이미지의 크기가 32x32라서 초기 7x7 conv를 3x3 conv연산으로 바꾸어 학습을 진행했고, 아래 그림과 같이 비슷한 경향을 가지는 결과를 얻었다.  
 ![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B2%B0%EA%B3%BC4.JPG?raw=true)  
-![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B2%B0%EA%B3%BC5.JPG?raw=true)  
+
 
 - Plain은 일정 layer의 수를 넘으면 그 이후의 layer부터는 성능이 좋지 않고, Residual은 layer의 수가 증가하더라도 결과가 더 좋아 지는 것을 확인할 수 있지만, 너무 크게 증가한 경우에는 더 좋지 않았다.
 - 1202-layer의 결과
@@ -196,7 +196,8 @@ $$ y = F(x, {W_i}) + W_sx $$
 ![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B2%B0%EA%B3%BC6.JPG?raw=true)
     - 일반화 성능 향상.
     - 최적화가 쉬워짐.
-- Residual 망이 layer-1000이 넘어가도 효과적으로 작동한다.
+- Residual 망이 layer-1000이 넘어가도 효과적으로 작동한다.  
+- ![](https://github.com/Sbeom12/study/blob/main/image/Resnet/%EA%B2%B0%EA%B3%BC5.JPG?raw=true)  
 
 
 ## 의문점.
