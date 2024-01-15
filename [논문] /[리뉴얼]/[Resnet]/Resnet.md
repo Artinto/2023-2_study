@@ -87,7 +87,7 @@ $$ y = F(x, {W_i}) + W_sx $$
 
 * 단순히 identity shortcut에서 **linear함수**인 $W_s$를 x에 곱한 꼴로 표현된다.
 * **x와 F의 차원을 동일하게 맞춰주기 위해** 위의 식을 사용한다. 이를 통해 **입력값의 차원을 변환**하여 덧셈 연산이 가능하게 해준다.
-* 또한 gradient를 구하였을 때 Ws가 사라지지 않고 남기 때문에 **vanishing gradient 문제를 해결** 할 수 있다.
+* 또한 gradient를 구하였을 때 $W_s$가 사라지지 않고 남기 때문에 **vanishing gradient 문제를 해결** 할 수 있다.
 
 </br>
 
