@@ -8,7 +8,8 @@
 ## Abstract
 Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인공 신경망 구조이다. 
 * 구조  
-<img width="500" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/bd6c3ffa-8279-4c6e-bc80-215027cb0af4">   
+<img width="500" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/bd6c3ffa-8279-4c6e-bc80-215027cb0af4">
+
 [출처](https://paperswithcode.com/method/autoencoder)  
 
 </br>
