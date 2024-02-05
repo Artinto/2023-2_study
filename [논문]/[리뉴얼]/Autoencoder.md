@@ -197,6 +197,7 @@ Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인
 [출처](https://yhyun225.tistory.com/21)  
 
 $$L_1 = W_1* x^T$$  
+
 $$L_2 = W_2 * L_1 = W_2*W_1*x^T$$
         
 * 그러면, PCA에 다층 퍼셉트론처럼 비선형성을 추가할 수 없을까?  
@@ -388,7 +389,8 @@ $$L_2 = W_2 * L_1 = W_2*W_1*x^T$$
     * randomly initialized backpropagation 1.6% error
     * 784-500-500-2000-10 pretrained는 1.2%
 * Doucument Retrieval
-<img width="500" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/128237b9-a806-4a0a-b39a-f594a1b4a421">   
+<img width="500" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/128237b9-a806-4a0a-b39a-f594a1b4a421">
+
   A: Document Retrieval Accuracy, B: LSA, C: 2000–500–250–125–2 autoencoder
   * 잠재 의미 분석(Latent Semantic Analysis, LSA) : 텍스트 데이터의 차원 축소 및 문서와 단어 사이의 잠재적인 의미 추출
 
