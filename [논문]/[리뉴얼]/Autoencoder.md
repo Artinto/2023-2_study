@@ -195,8 +195,12 @@ Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인
 <img width="418" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/8d12f767-32cb-4973-80ee-cc711bca68be">     
 
 [출처](https://yhyun225.tistory.com/21)  
-* 1층 $ L_1 = W_1* x^T $  
-* 2층$ L_2 = W_2 * L_1 = W_2*W_1*x^T $  
+* 1층  
+   $ L_1 = W_1* x^T $  
+  
+* 2층  
+   $ L_2 = W_2 * L_1 = W_2*W_1*x^T $
+  
 * 그러면, PCA에 다층 퍼셉트론처럼 비선형성을 추가할 수 없을까?  
 
 
