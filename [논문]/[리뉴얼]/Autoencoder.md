@@ -43,7 +43,8 @@ Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인
   * 데이터 분석 및 해석 용이(시각화, 분류)
 * 차원의 저주(Curse of Dimensionality)
   * 데이터의 차원이 증가함에 따라 데이터의 개수가 차원이 크기보다 작아져 학습 효율이 떨어지는 현상  
-  <img width="600" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/a9056b46-a3a6-4558-972c-f4c2731ff492">   
+  <img width="600" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/a9056b46-a3a6-4558-972c-f4c2731ff492">
+
   [출처](https://esj205.oopy.io/978eadf3-ddc3-4bd7-a5b1-f2f085ff7252)  
   </br>  
   * 차원이 증가할 수록 데이터가 특정 공간에 차지하는 공간이 작아짐
@@ -67,7 +68,8 @@ Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인
     * 데이터에서 직관이나 해석을 쉽게 하기 위해 활용
     * t-SNE(t-분포 확률적 임베딩):  차원 축소 시 비슷한 구조끼리 데이터를 정리한 상태
     * Mnist에 대한 t-SNE의 결과  
-    <img width="338" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/ee366228-025c-47d6-95ea-34d37a694758">   
+    <img width="338" alt="image" src="https://github.com/ces0o/Paper-Review/assets/127365253/ee366228-025c-47d6-95ea-34d37a694758">
+
     [출처](https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1)     
     <br>  
   * Curse of dimensionality 개선 : 차원의 저주 개선
@@ -194,7 +196,7 @@ Autoencoder는 주로 차원 축소 및 특징 추출을 위해 사용되는 인
 
 [출처](https://yhyun225.tistory.com/21)  
 
-$$L_1 = W_1* x^T$$
+$$L_1 = W_1* x^T$$  
 $$L_2 = W_2 * L_1 = W_2*W_1*x^T$$
         
 * 그러면, PCA에 다층 퍼셉트론처럼 비선형성을 추가할 수 없을까?  
