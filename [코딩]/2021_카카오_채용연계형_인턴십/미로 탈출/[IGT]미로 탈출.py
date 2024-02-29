@@ -3,12 +3,12 @@ def solution(n, start, end, roads, traps):
     len_traps = len(traps)
     traps_idx = {traps[i]:i for i in range(len_traps)}
     traps = set(traps) # time complexity of "() in ()" : set(O(1)) < list(O(n))
-    bin_n = 2**len_traps
+    bin_len = 2**len_traps
     time = [[] for _ in range(n+1)]
     for a,b,c in roads:
         time[a] += [(c,b,False)] # forward
         time[b] += [(c,a,True)] # backward
-    dist = [[float("inf")]*bin_n for _ in range(n+1)]
+    dist = [[float("inf")]*bin_len for _ in range(n+1)]
     dist[start][0] = 0
     H = [(0,start,0)]
     while H:
